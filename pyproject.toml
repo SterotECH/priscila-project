@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "backend"
+version = "0.0.0"
+description = "The church management system is a web-based application that will be used by its stakeholders to keep records and data. The system will provide an alternative to the manual ways of keeping records. The system will be designed for the presiding elders, supporting elder, financial secretary, local church secretary and executive members of each ministry in the church and it will provide different access levels and functionality based on the role of the user. The system will use secure authentication and authorization mechanisms to protect user accounts and data."
+authors = ["Stero tECH"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.2.1"
+djangorestframework = "^3.14.0"
+djangorestframework-simplejwt = "^5.2.2"
+filters-django = "^1.0.5"
+django-unfold = "^0.6.4"
+django-markdown = "^0.8.4"
+python-dotenv = "^1.0.0"
+psycopg2 = "^2.9.6"
+pillow = "^9.5.0"
+whitenoise = "^6.4.0"
+django-import-export = "^3.2.0"
+django-slick-reporting = "^0.7.0"
+
+[tool.poetry.group.dev.dependencies]
+django-debug-toolbar = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
